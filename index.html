@@ -5,53 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chrome & Burger</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/b10522ed86.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/style.css">
 </head>
-<body class="font-sans text-[20px] bg-white text-black dark:bg-gray-900 dark:text-white">
-    <main class="p-8">
-        <section class="flex flex-col lg:flex-row max-w-[1440px] mx-auto my-[30px] gap-[30px] px-[30px]">
-            <div class="flex-1 bg-[#e2f8ff] dark:bg-gray-800 rounded-[30px] p-[30px] flex flex-col justify-center">
-                <h1 class="font-lobster text-[64px] leading-none mb-2.5">Chrome & Burger</h1>
-                <p class="mb-7">Feeling famished after conquering those waves? Look no further than Chrome & Burger, your one-stop shop for gourmet grub that's as classic as a beach sunset and as shiny as a chrome fender!</p>
-                <button class="px-8 py-3 bg-[#0a61ae] rounded-xl text-xl">PDF Menu</button>
-            </div>
-            <div class="flex-1 bg-[#ffda4b] dark:bg-gray-800 rounded-[30px] px-[30px] flex justify-center items-center">
-                <img src="./images/BurgerTruck.jpeg" alt="">
-            </div>
+<body class="text-[20px]">
+    <!-- <header class="flex justify-around items-center w-full h-fit">
+        <section>
+            <a href="#" class="flex items-center gap-x-4 font-semibold">
+                <div class="text-3xl">🍔</div>
+                <span class="text-2xl">Chrome & Burger</span>
+            </a>
         </section>
-        <section class="featured max-w-[1440px] mx-auto my-[30px] gap-[30px] px-[30px]">
-            <h2 class="text-[64px] leading-none mb-2.5 text-center p-[30px]">100% Organic Burgers</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-[30px]">
-                <article class="bg-[#ffda4b] dark:bg-gray-800 px-[30px] py-[60px] rounded-[30px] transition-colors">
-                    <figure class="overflow-hidden">
-                        <img src="./images/TheAllAmerican.jpeg" alt="" class="w-full transition ease-linear duration-[3000ms] hover:transform hover:scale-[1.2]">
-                    </figure>
-                    <h3 class="text-[32px] font-semibold leading-none mb-5 mt-5">The All-American</h3>
-                    <p class="mb-2.5">
-                        A timeless masterpiece featuring a juicy all-beef patty, melted cheddar cheese, crisp lettuce, vine-ripened tomato, red onion, tangy pickles, and our signature "Wagon Sauce" on a toasted brioche bun.
-                    </p>
-                </article>
-                <article class="bg-[#ffda4b] dark:bg-gray-800 px-[30px] py-[60px] rounded-[30px] transition-colors">
-                    <figure class="overflow-hidden">
-                        <img src="./images/BaconCheeseburger.jpeg" alt="" class="w-full transition ease-linear duration-[3000ms] hover:transform hover:scale-[1.2]">
-                    </figure>
-                    <h3 class="text-[32px] font-semibold leading-none mb-5 mt-5">Bacon Cheeseburger</h3>
-                    <p class="mb-2.5">
-                        This beauty boasts a juicy all-beef patty, crisp bacon, melted cheddar cheese, crisp lettuce, vine-ripened tomato, red onion, and tangy pickles, all on a toasted brioche bun.
-                    </p>
-                </article>
-                <article class="bg-[#ffda4b] dark:bg-gray-800 px-[30px] py-[60px] rounded-[30px] transition-colors">
-                    <figure class="overflow-hidden">
-                        <img src="./images/TheAlohaBurger.jpeg" alt="" class="w-full transition ease-linear duration-[3000ms] hover:transform hover:scale-[1.2]">
-                    </figure>
-                    <h3 class="text-[32px] font-semibold leading-none mb-5 mt-5">The Aloha Burger</h3>
-                    <p class="mb-2.5">
-                        This tropical treat features a juicy all-beef patty topped with grilled pineapple, melted Swiss cheese, crisp lettuce, tangy teriyaki sauce, and a creamy sriracha mayo on a toasted Hawaiian sweet roll.
-                    </p>
-                </article>
+        <nav class="flex items-center gap-x-8 text-xl text-[#555]">
+            <a href="#" class="p-2 bg-gray-800 rounded-full">🌙</a>
+            <a href="#">Home</a>
+            <a href="#">Menu</a>
+            <a href="#" class="px-8 py-2 text-white bg-[#0a61ae] rounded-lg">Order Now</a>
+        </nav>
+    </header> -->
+    <main class="p-8">
+        <section class="flex flex-col gap-y-8 mb-8">
+            <div class="px-8 py-6 bg-[#e2f8ff] rounded-4xl">
+                <h1 class="mb-2 font-[lobster] text-6xl">Chrome & Burger</h1>
+                <p class="mb-4">Feeling famished after conquering those waves? Look no further than Chrome & Burger, your one-stop shop for gourmet grub that's as classic as a beach sunset and as shiny as a chrome fender!</p>
+                <button class="mb-10 px-8 py-2.5 text-[#f1f1f1] bg-[#0a61ae] rounded-lg">PDF Menu</button>
             </div>
+            <img src="./images/BurgerTruck.jpeg" alt="" class="px-8 bg-[#ffda4b] rounded-4xl">
         </section>
     </main>
-    <script src="./src/script.js" defer></script>
 </body>
 </html>
