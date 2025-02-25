@@ -5,32 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chrome & Burger</title>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <script src="https://kit.fontawesome.com/b10522ed86.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
 </head>
-<body class="text-[20px]">
-    <!-- <header class="flex justify-around items-center w-full h-fit">
+<body class="font-[Open_Sans] text-[20px]">
+    <header class="flex justify-between items-center px-5 py-4.5 border-b-gray-200 border-b">
         <section>
-            <a href="#" class="flex items-center gap-x-4 font-semibold">
+            <a href="#" class="flex items-center gap-x-3 font-semibold">
                 <div class="text-3xl">🍔</div>
-                <span class="text-2xl">Chrome & Burger</span>
+                <span class="text-1.5xl">Chrome & Burger</span>
             </a>
         </section>
-        <nav class="flex items-center gap-x-8 text-xl text-[#555]">
-            <a href="#" class="p-2 bg-gray-800 rounded-full">🌙</a>
+        <nav class="flex items-center gap-x-7 text-xl text-[#555]">
+            <button class="p-2 bg-gray-800 rounded-full">🌙</button>
             <a href="#">Home</a>
             <a href="#">Menu</a>
-            <a href="#" class="px-8 py-2 text-white bg-[#0a61ae] rounded-lg">Order Now</a>
+            <a href="#" class="px-7.5 py-2.75 text-white bg-[#0a61ae] rounded-xl">Order Now</a>
         </nav>
-    </header> -->
+    </header>
     <main class="p-8">
-        <section class="flex flex-col gap-y-8 mb-8">
-            <div class="px-8 py-6 bg-[#e2f8ff] rounded-4xl">
+        <section class="flex flex-col lg:flex-row max-w-[1440px] gap-8 mb-16">
+            <div class="flex flex-col justify-center flex-1 px-8 py-6 bg-[#e2f8ff] rounded-4xl">
                 <h1 class="mb-2 font-[lobster] text-6xl">Chrome & Burger</h1>
-                <p class="mb-4">Feeling famished after conquering those waves? Look no further than Chrome & Burger, your one-stop shop for gourmet grub that's as classic as a beach sunset and as shiny as a chrome fender!</p>
-                <button class="mb-10 px-8 py-2.5 text-[#f1f1f1] bg-[#0a61ae] rounded-lg">PDF Menu</button>
+                <p class="mb-4">
+                    Feeling famished after conquering those waves? Look no further than Chrome & Burger, your one-stop shop for gourmet grub that's as classic as a beach sunset and as shiny as a chrome fender!
+                </p>
+                <div>
+                    <button class="mb-10 px-8 py-2.5 text-[#f1f1f1] bg-[#0a61ae] rounded-lg">PDF Menu</button>
+                </div>
             </div>
-            <img src="./images/BurgerTruck.jpeg" alt="" class="px-8 bg-[#ffda4b] rounded-4xl">
+            <div class="flex-1 px-8 bg-[#ffda4b] rounded-4xl">
+                <img src="./images/BurgerTruck.jpeg" alt="">
+            </div>
+        </section>
+        <section>
+            <h2 class="mb-8 text-6xl text-center">100% Organic Burgers</h2>
+            <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+                <figure class="px-8 py-8 bg-[#ffda4b] rounded-4xl">
+                    <div class="overflow-hidden">
+                        <img src="./images/TheAllAmerican.jpeg" alt="" class="transition ease-linear duration-3000 hover:scale-120">
+                    </div>
+                    <figcaption class="my-4 text-3xl font-semibold">The All-American</figcaption>
+                    <p>A timeless masterpiece featuring a juicy all-beef patty, melted cheddar cheese, crisp lettuce, vine-ripened tomato, red
+                    onion, tangy pickles, and our signature "Wagon Sauce" on a toasted brioche bun.</p>
+                </figure>
+                <figure class="px-8 py-8 bg-[#ffda4b] rounded-4xl">
+                    <div class="overflow-hidden">
+                        <img src="./images/BaconCheeseburger.jpeg" alt="Bacon cheese burger" class="transition ease-linear duration-3000 hover:scale-120">
+                    </div>
+                    <figcaption class="my-4 text-3xl font-semibold">Bacon Cheeseburger</figcaption>
+                    <p>This beauty boasts a juicy all-beef patty, crisp bacon, melted cheddar cheese, crisp lettuce, vine-ripened tomato, red
+                    onion, and tangy pickles, all on a toasted brioche bun.</p>
+                </figure>
+                <figure class="px-8 py-8 bg-[#ffda4b] rounded-4xl">
+                    <div class="overflow-hidden">
+                        <img src="./images/TheAlohaBurger.jpeg" alt="" class="transition ease-linear duration-3000 hover:scale-120">
+                    </div>
+                    <figcaption class="my-4 text-3xl font-semibold">The Aloha Burger</figcaption>
+                    <p>This tropical treat features a juicy all-beef patty topped with grilled pineapple, melted Swiss cheese, crisp lettuce,
+                    tangy teriyaki sauce, and a creamy sriracha mayo on a toasted Hawaiian sweet roll.</p>
+                </figure>
+            </div>
         </section>
     </main>
 </body>
